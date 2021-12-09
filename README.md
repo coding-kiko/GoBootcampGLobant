@@ -17,3 +17,5 @@ The following text is just a guide prepared by the bootcamp creator:
     What do you use to make two functions concurrent?
     How would you synchronize two concurrent functions?
     Write a program with three functions. One will send stuff(whatever you'd like) over a channel every one second and one will receive it and print it. The third function will tell the other two functions to stop and return(it could be the main func) after 5 seconds. NOTE: the program can not end until the sender and receiver have returned.
+
+## Made by Francisco Calixto
