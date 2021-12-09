@@ -1,6 +1,6 @@
-After studying some of the concepts of the [second part](https://github.com/josnelihurt/golang-bootcamp/wiki/Part-2:-Language-basics#project-2-db-in-memory-cli-application) of the bootcamp, this is a repository where I will be answering some question as well as making some exercises in order to test my newly acquired abilities in GO.
+#### After studying some of the concepts of the [second part](https://github.com/josnelihurt/golang-bootcamp/wiki/Part-2:-Language-basics#project-2-db-in-memory-cli-application) of the bootcamp, this is a repository where I will be answering some question as well as making some exercises in order to test my newly acquired abilities in GO.
 
-The following text is just a guide prepared by the bootcamp creator:
+##### The following text is just a guide prepared by the bootcamp creator:
 
     How would you write a while statement in Go?
     What does the keyword defer do?
