@@ -26,5 +26,5 @@ func ByValue(s string, new string) {
 
 func ByReference(s *string, new string) {
 	*s = strings.Replace(*s, *s, new, 1) // here I am dereferencing the pointer and reasigning the new value to where
-										 // it points in memory, changing what the variable actually points to
+					     // it points in memory, changing what the variable actually points to
 }
