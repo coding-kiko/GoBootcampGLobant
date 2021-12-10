@@ -1,0 +1,5 @@
+A library in go is a single or a grouip of modules that dont include the package 'main'. The idea 
+behind libraries is to create a reusable codebase that can serve different functionalities for a
+personal project or even the whole community. A program that executes on the other hand, includes
+the 'main' package and the 'main' function which determine the difference between an executable
+and a library.
