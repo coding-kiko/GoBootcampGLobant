@@ -1,9 +1,7 @@
 package MyErrors
 
 import (
-	"errors"
 	"fmt"
-	"os"
 )
 
 type Internal struct {
@@ -11,7 +9,7 @@ type Internal struct {
 }
 
 func (i *Internal) Error() string {
-    return fmt.Println("Error: ThirdParty:", i.description)
+    return fmt.Sprintf("Error: ThirdParty: %s", i.description)
 }
 
 type ThirdParty struct {
@@ -19,7 +17,7 @@ type ThirdParty struct {
 }
 
 func (t *ThirdParty) Error() string {
-    return fmt.Println("Error: ThirdParty:", t.description)
+    return fmt.Sprintf("Error: ThirdParty: %s", t.description)
 }
 
 type Other struct {
@@ -27,7 +25,7 @@ type Other struct {
 }
 
 func (o *Other) Error() string {
-    return fmt.Println("Error: ThirdParty:", o.description)
+    return fmt.Sprintf("Error: ThirdParty: %s", o.description)
 }
 
 // function that accepts any type of error and prints its type
