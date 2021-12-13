@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"./operations" // importing the operations that are one folder ahead
+	operations "github.com/coding-kiko/GoBootcampGlobant/8-calculator/operations" // importing the operations that are one folder ahead
 	"os"
 	"strconv"
 )
