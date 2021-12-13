@@ -8,7 +8,7 @@ import (
 )
 
 // reads from cmd line and makes operation depening on the operatoin sign
-// only +, -, * and / are implemented. example: ./calc 1 + 3
+// only +, -, x and / are implemented. example: ./calc 1 + 3
 func main() {
 	a, _ := strconv.Atoi(os.Args[1])
 	op := os.Args[2]
@@ -20,7 +20,9 @@ func main() {
 		fmt.Println(operations.Subtract(a, b))
 	case "/":
 		fmt.Println(operations.Divide(a, b))
-	case "*":
+	case "x":
 		fmt.Println(operations.Multiply(a, b))
+	default:
+		fmt.Println("Invalid operator")
 	}
 }
