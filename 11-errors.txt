@@ -1,0 +1,4 @@
+In go errors are treated as simple values. By convention an additional, last value is
+added to the return value of a function, with the aim of passing information as an error.
+Usually a non problematic return value should return normally and with an error value of nil.
+Any value that is not nil, should be treated as an error.
