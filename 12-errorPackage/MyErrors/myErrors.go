@@ -30,7 +30,7 @@ func (o *Other) Error() string {
 
 // function that accepts any type of error and prints its type
 func CheckErrType(e error) {
-	switch tp := e.(type) {
+	switch e.(type) {
 	case *ThirdParty:
 		fmt.Println("This error is a ThirdParty error")
 	case *Internal:
