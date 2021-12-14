@@ -5,27 +5,27 @@ import (
 )
 
 type Internal struct {
-	description string
+	Description string
 }
 
 func (i *Internal) Error() string {
-    return fmt.Sprintf("Error: ThirdParty: %s", i.description)
+    return fmt.Sprintf("Error: ThirdParty: %s", i.Description)
 }
 
 type ThirdParty struct {
-	description string
+	Description string
 }
 
 func (t *ThirdParty) Error() string {
-    return fmt.Sprintf("Error: ThirdParty: %s", t.description)
+    return fmt.Sprintf("Error: ThirdParty: %s", t.Description)
 }
 
 type Other struct {
-	description string
+	Description string
 }
 
 func (o *Other) Error() string {
-    return fmt.Sprintf("Error: ThirdParty: %s", o.description)
+    return fmt.Sprintf("Error: ThirdParty: %s", o.Description)
 }
 
 // function that accepts any type of error and prints its type
