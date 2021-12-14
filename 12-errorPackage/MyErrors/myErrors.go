@@ -4,14 +4,16 @@ import (
 	"fmt"
 )
 
+// new error type with a single description
 type Internal struct {
 	Description string
 }
-
+// implementing Error() method: now my new type is considered as an error (thanks interface gods)
 func (i *Internal) Error() string {
     return fmt.Sprintf("Error: Internal: %s", i.Description)
 }
 
+// new error type with a single description
 type ThirdParty struct {
 	Description string
 }
@@ -20,6 +22,7 @@ func (t *ThirdParty) Error() string {
     return fmt.Sprintf("Error: ThirdParty: %s", t.Description)
 }
 
+// new error type with a single description
 type Other struct {
 	Description string
 }
