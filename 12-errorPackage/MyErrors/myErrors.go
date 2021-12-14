@@ -9,7 +9,7 @@ type Internal struct {
 }
 
 func (i *Internal) Error() string {
-    return fmt.Sprintf("Error: ThirdParty: %s", i.Description)
+    return fmt.Sprintf("Error: Internal: %s", i.Description)
 }
 
 type ThirdParty struct {
@@ -25,7 +25,7 @@ type Other struct {
 }
 
 func (o *Other) Error() string {
-    return fmt.Sprintf("Error: ThirdParty: %s", o.Description)
+    return fmt.Sprintf("Error: %s", o.Description)
 }
 
 // function that accepts any type of error and prints its type
