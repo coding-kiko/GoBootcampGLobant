@@ -22,7 +22,7 @@ func main() {
 	}
 
 	wg.Wait() // this waits for all routines asigned to the same waitgroup to finish, else the main routine
-	// would finish and spoil the party
+		  // would finish and spoil the party
 }
 
 // output:       NOTICE: the result of the 'race' will be different each time
