@@ -1,3 +1,4 @@
+package main
 /* In Go, what defines if a definition (function, type, etc) is public or private is simply the
 case of it's first letter. Supposing that it starts with a lower case letter, its definition
 will be invisible outside of the package. In contrast, definitions starting will upper case

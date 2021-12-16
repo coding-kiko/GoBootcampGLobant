@@ -1,3 +1,7 @@
+package main
+
+import "os"
+
 /* defer is a keyword used to define an function call that you may want to execute after the
 surrounding function finishes executing every single piece of code. Under the hood, what is
 happening is each function called with defer, is being pushed to a call stack, which then
