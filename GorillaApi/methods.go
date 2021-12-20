@@ -18,12 +18,17 @@ func (db *DB) ShowInfo(w http.ResponseWriter, r *http.Request) {
 	} else {
 		w.Header().Set("Content-Type", "application/json")
 		// formating response =>     Language : ID
+		resp := make(map[string]string)
 		for _, l := range all {
-			w.Write([]byte(l.Name))
-			w.Write([]byte(" : "))
-			w.Write([]byte(l.ID.Hex()))
-			w.Write([]byte("\n"))
+			resp[l.Name] = l.ID.Hex()
 		}
+		r, err := json.Marshal(resp)
+		if err != nil {
+			w.Write([]byte(err.Error()))
+		} else {
+			w.Write([]byte(r))
+		}
+		w.Write([]byte("\n"))
 	}
 }
 
