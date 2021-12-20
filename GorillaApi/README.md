@@ -3,7 +3,7 @@
 ##### Endpoints:
 
     GET:  /api/languages
-    This method lists all of the compact information about the proggraming languages stored in the database.
+    This method lists all of the compact information about the programming languages stored in the database.
 
     Example output:
     curl -X GET http://localhost:8000/api/languages
